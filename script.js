@@ -1,43 +1,15 @@
 // ===== TapCard Landing =====
-const WHATSAPP_NUMBER = "573156349313";
+const WHATSAPP_NUMBER = "573150453133";
 const waLink = (msg) => `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
-
-// Countdown 48h persistent
-const CD_KEY = "tapcard_cd_target";
-let target = localStorage.getItem(CD_KEY);
-if (!target) {
-  target = Date.now() + 48 * 3600 * 1000;
-  localStorage.setItem(CD_KEY, target);
-} else {
-  target = parseInt(target, 10);
-}
-
-const getDiff = () => Math.max(0, target - Date.now());
-const pad = (n) => n.toString().padStart(2, "0");
-
-function tick() {
-  const diff = getDiff();
-  const h = Math.floor(diff / 3600000);
-  const m = Math.floor((diff % 3600000) / 60000);
-  const s = Math.floor((diff % 60000) / 1000);
-  const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = pad(v); };
-  set("cd-h", h); set("cd-m", m); set("cd-s", s);
-  set("cd-h2", h); set("cd-m2", m); set("cd-s2", s);
-}
-tick();
-setInterval(tick, 1000);
 
 // Attach WhatsApp links to all CTAs with data-msg dynamically
 document.querySelectorAll(".wa-cta").forEach((el) => {
-  const baseMsg = el.dataset.msg || "Hola 👋, quiero información sobre las Tarjetas Digitales.";
+  const baseMsg = el.dataset.msg || "Hola 👋, quiero información sobre los Centros Digitales.";
   el.setAttribute("href", "#"); // Provide a fallback
   
   el.addEventListener("click", (e) => {
     e.preventDefault();
-    const isPromoActive = getDiff() > 0;
-    const statusText = isPromoActive ? "\n\n*(Estado: Descuento Activo 🎁)*" : "\n\n*(Estado: Descuento Inactivo ⏳)*";
-    const finalMsg = baseMsg + statusText;
-    window.open(waLink(finalMsg), "_blank", "noopener");
+    window.open(waLink(baseMsg), "_blank", "noopener");
   });
 });
 
