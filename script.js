@@ -41,10 +41,10 @@ document.querySelectorAll(".wa-cta").forEach((el) => {
   });
 });
 
-// QR pointing to WhatsApp demo message
+// QR pointing directly to a live demo
 const qr = document.getElementById("qr-img");
 if (qr) {
-  const url = waLink("Hola 👋, acabo de ver la DEMO de la Tarjeta Digital y me interesa. ¿Me cuentas los planes?");
+  const url = "https://burgerstreet.vercel.app/";
   qr.src = `https://api.qrserver.com/v1/create-qr-code/?size=400x400&margin=0&data=${encodeURIComponent(url)}`;
 }
 
