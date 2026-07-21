@@ -113,6 +113,13 @@ img{max-width:100%;display:block}
 @media(min-width:640px){.grid-2-mini{grid-template-columns:1fr 1fr}}
 .grid-2-mini li{display:flex;align-items:center;gap:16px;font-size:15px}
 
+@media(max-width:639px){
+  .grid-cols-2-mobile{grid-template-columns:1fr 1fr;gap:16px;}
+  .grid-cols-2-mobile .feature{padding:16px !important;}
+  .grid-cols-2-mobile .feature h3{font-size:15px;margin-top:12px;margin-bottom:8px;}
+  .grid-cols-2-mobile .ico-badge.lg{width:40px;height:40px;font-size:20px;margin-bottom:12px !important;}
+}
+
 .card{border-radius:24px;padding:40px}
 .past{background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.05);color:var(--muted);filter:grayscale(1)}
 .past-head,.future-head{display:flex;align-items:center;gap:12px;font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:600}
