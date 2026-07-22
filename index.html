@@ -9,7 +9,7 @@
 <meta property="og:description" content="La forma más inteligente de conectar con tus clientes." />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
-<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="./favicon.ico" type="image/x-icon" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" />
@@ -38,7 +38,7 @@
 <!-- 1. HERO -->
 <section class="hero container">
   <div class="hero-copy fade-up">
-    <h1>Todo tu negocio en <span class="text-gradient">un solo lugar</span>.</h1>
+    <h1>Todo para tu <span id="titular-nicho" class="text-gradient">negocio</span> en un solo lugar.</h1>
     
     <div style="margin-top: 16px; margin-bottom: 8px;">
       <span class="pill glass">🚀 <span class="fg">Centro Digital de Negocios</span></span>
@@ -48,36 +48,24 @@
     
     <div class="hero-ctas" style="margin-top: 40px;">
       <a href="#demo" class="btn btn-glow pulse">Descubre cómo funciona →</a>
-      <span class="stars-line">⭐⭐⭐⭐⭐ <span class="muted">Diseñado para negocios que quieren proyectar una imagen premium.</span></span>
+      <span class="stars-line">⭐⭐⭐⭐⭐ 4.9 sobre 27 reseñas · <span class="muted">Diseñado para negocios que quieren proyectar una imagen premium.</span></span>
     </div>
   </div>
 
   <div class="hero-visual fade-up">
     <div class="hero-glow" aria-hidden="true"></div>
-    <img src="./phone-hero.png" alt="Mockup de smartphone mostrando un Centro Digital de Negocios" class="phone float" />
+    <picture>
+      <source srcset="./phone-hero.webp" type="image/webp">
+      <img src="./phone-hero.png" alt="Mockup de smartphone mostrando un Centro Digital de Negocios" class="phone float" />
+    </picture>
+    <div class="mockup-persona-badge glass">
+      <span class="mockup-persona-dot">●</span>
+      <span id="mockup-persona-text">Carlos Mendoza, Asesor de Seguros</span>
+    </div>
   </div>
 </section>
 
-<!-- 2. ¿QUÉ ES UN CENTRO DIGITAL? -->
-<section id="ecosistema" class="section container">
-  <div class="section-head center">
-    <span class="eyebrow violet">Ecosistema Integrado</span>
-    <h2>Mucho más que una <span class="text-gradient">tarjeta</span></h2>
-    <p class="muted">Es la plataforma tecnológica donde tu negocio centraliza todas las formas en las que un cliente puede interactuar contigo.</p>
-  </div>
-  <div class="grid-4" style="text-align: center;">
-    <div class="glass feature" style="padding: 24px;"><span class="ico-badge lg" style="margin: 0 auto 16px;">💬</span><h3>WhatsApp Directo</h3></div>
-    <div class="glass feature" style="padding: 24px;"><span class="ico-badge lg" style="margin: 0 auto 16px;">🌐</span><h3>Redes Sociales</h3></div>
-    <div class="glass feature" style="padding: 24px;"><span class="ico-badge lg" style="margin: 0 auto 16px;">🛍️</span><h3>Catálogo Interactivo</h3></div>
-    <div class="glass feature" style="padding: 24px;"><span class="ico-badge lg" style="margin: 0 auto 16px;">📅</span><h3>Agenda Online</h3></div>
-    <div class="glass feature" style="padding: 24px;"><span class="ico-badge lg" style="margin: 0 auto 16px;">📍</span><h3>Ubicación GPS</h3></div>
-    <div class="glass feature" style="padding: 24px;"><span class="ico-badge lg" style="margin: 0 auto 16px;">📝</span><h3>Formularios</h3></div>
-    <div class="glass feature" style="padding: 24px;"><span class="ico-badge lg" style="margin: 0 auto 16px;">⭐</span><h3>Testimonios</h3></div>
-    <div class="glass feature" style="padding: 24px;"><span class="ico-badge lg" style="margin: 0 auto 16px;">🔗</span><h3>Links Ilimitados</h3></div>
-  </div>
-</section>
-
-<!-- 3. EL PROBLEMA (AGITACIÓN) -->
+<!-- 2. EL PROBLEMA (AGITACIÓN) - Movido justo después del Hero (A4) -->
 <section class="section container">
   <div class="section-head">
     <span class="eyebrow blue">El Problema</span>
@@ -86,23 +74,23 @@
   <div class="grid-3">
     <div class="card past">
       <div class="past-head">🗑 <span>CONTACTOS PERDIDOS</span></div>
-      <h3>"No encuentro tu WhatsApp"</h3>
+      <h3 id="dolor-titulo-1">"No encuentro tu WhatsApp"</h3>
       <p class="small muted mt-sm">Tus clientes tienen que buscar tu número, agregarte manualmente y luego escribirte. Mucha fricción significa menos ventas.</p>
     </div>
     <div class="card past">
       <div class="past-head">📉 <span>DESACTUALIZADO</span></div>
-      <h3>"Ese precio ya cambió"</h3>
+      <h3 id="dolor-titulo-2">"Ese precio ya cambió"</h3>
       <p class="small muted mt-sm">Enviar PDFs estáticos o usar tarjetas de papel significa que tu información queda obsoleta en el momento que la entregas.</p>
     </div>
     <div class="card past">
       <div class="past-head">🧩 <span>CAOS DIGITAL</span></div>
-      <h3>Información repartida</h3>
+      <h3 id="dolor-titulo-3">Información repartida</h3>
       <p class="small muted mt-sm">Tu portafolio está en un link, tu ubicación en otro, y tus reseñas perdidas. Tu cliente se frustra saltando de app en app.</p>
     </div>
   </div>
 </section>
 
-<!-- 4. LA SOLUCIÓN -->
+<!-- 3. LA SOLUCIÓN -->
 <section class="section container">
   <div class="section-head align-center">
     <h2>La forma más inteligente de <span class="text-gradient">conectar</span></h2>
@@ -119,12 +107,134 @@
       <a href="#pricing" class="btn btn-ghost mt-lg">Conocer los planes →</a>
     </div>
     <div class="hero-visual">
-       <img src="./phone-hero.png" alt="Demostración visual" class="phone float" />
+       <picture>
+         <source srcset="./phone-hero.webp" type="image/webp">
+         <img src="./phone-hero.png" alt="Demostración visual" class="phone float" loading="lazy" />
+       </picture>
     </div>
   </div>
 </section>
 
-<!-- 5. BENEFICIOS -->
+<!-- 4. EL ARSENAL: TODO LO QUE INCLUYE TU CENTRO DIGITAL (Consolidación de Ecosistema, Arsenal y Qué puede hacer - A3) -->
+<section id="ecosistema" class="section container">
+  <div class="section-head center">
+    <span class="eyebrow violet">Ecosistema Integrado</span>
+    <h2>Un sistema diseñado para <span class="text-gradient">ganar</span></h2>
+    <p class="muted">El Centro Digital es la plataforma donde tu negocio centraliza todas las formas en las que un cliente interactúa contigo, eliminando la redundancia y sumando efectividad.</p>
+  </div>
+  <div class="grid-3">
+    <!-- WhatsApp Directo -->
+    <div class="glass feature">
+      <span class="ico-badge lg">💬</span>
+      <h3>WhatsApp Directo</h3>
+      <p class="muted">Centraliza el chat con un enlace personalizado y mensajes precargados según el rubro de tu negocio para eliminar fricción.</p>
+    </div>
+    <!-- Tarjeta Digital vCard -->
+    <div class="glass feature">
+      <span class="ico-badge lg">📇</span>
+      <h3>Tarjeta Digital vCard</h3>
+      <p class="muted">Botón inteligente para que tu cliente guarde todos tus datos en su agenda de contactos en un segundo y con un solo toque.</p>
+    </div>
+    <!-- Código QR Dinámico -->
+    <div class="glass feature">
+      <span class="ico-badge lg">🔳</span>
+      <h3>Código QR Dinámico</h3>
+      <p class="muted">Listo para imprimir en tarjetas, mesas o local. Si cambias de número o datos, el QR sigue funcionando y muestra la info nueva.</p>
+    </div>
+    <!-- Catálogo e interactivos -->
+    <div class="glass feature">
+      <span class="ico-badge lg">🛍️</span>
+      <h3>Catálogo Interactivo</h3>
+      <p class="muted">Muestra de manera premium tus productos, portafolio o menú gastronómico directamente en la web sin descargar pesados PDFs.</p>
+    </div>
+    <!-- Agenda Online -->
+    <div class="glass feature">
+      <span class="ico-badge lg">📅</span>
+      <h3>Agenda Inteligente</h3>
+      <p class="muted">Permite que tus clientes soliciten y reserven citas contigo en cualquier momento sin necesidad de chatear de ida y vuelta.</p>
+    </div>
+    <!-- Ubicación GPS -->
+    <div class="glass feature">
+      <span class="ico-badge lg">📍</span>
+      <h3>Ubicación GPS (Waze / Maps)</h3>
+      <p class="muted">Facilita la llegada de tus clientes enlazando tu ubicación exacta en Google Maps. Así como te encontramos a ti en Google, así te van a encontrar tus clientes.</p>
+    </div>
+    <!-- Formularios Inteligentes -->
+    <div class="glass feature">
+      <span class="ico-badge lg">📝</span>
+      <h3>Formularios de Contacto</h3>
+      <p class="muted">Permite capturar solicitudes de información, cotizaciones o datos de leads que llegan directo a tu correo electrónico.</p>
+    </div>
+    <!-- Redes Sociales & Links -->
+    <div class="glass feature">
+      <span class="ico-badge lg">🔗</span>
+      <h3>Redes & Links Ilimitados</h3>
+      <p class="muted">Conecta tus redes sociales (Instagram, Facebook, TikTok) y canales bajo un solo enlace moderno, ideal para tu biografía.</p>
+    </div>
+    <!-- Galería Interactiva -->
+    <div class="glass feature">
+      <span class="ico-badge lg">📷</span>
+      <h3>Galería Interactiva</h3>
+      <p class="muted">Muestra tus mejores trabajos de forma visual, profesional e interactiva mediante fotografías optimizadas.</p>
+    </div>
+    <!-- Videos -->
+    <div class="glass feature">
+      <span class="ico-badge lg">🎥</span>
+      <h3>Videos Embebidos</h3>
+      <p class="muted">Presenta tus productos o servicios en acción con videos de demostración integrados directamente en el sitio.</p>
+    </div>
+    <!-- Tecnología PWA -->
+    <div class="glass feature">
+      <span class="ico-badge lg">📱</span>
+      <h3>Tecnología PWA (App)</h3>
+      <p class="muted">Se instala en la pantalla de inicio del celular de tu cliente en 3 segundos, sin pasar por la App Store y sin ocupar memoria.</p>
+    </div>
+    <!-- Dominio Personalizado -->
+    <div class="glass feature">
+      <span class="ico-badge lg">🌐</span>
+      <h3>Dominio Personalizado</h3>
+      <p class="muted">Enlaza tu Centro Digital con tu propio dominio (ej. www.tunegocio.com) para proyectar máxima autoridad y confianza.</p>
+    </div>
+    <!-- Notificaciones Push -->
+    <div class="glass feature">
+      <span class="ico-badge lg">📲</span>
+      <h3>Notificaciones Push</h3>
+      <p class="muted">Envía promociones, noticias y recordatorios directamente a la pantalla del celular de tus clientes frecuentes.</p>
+    </div>
+    <!-- Campañas de Bienvenida -->
+    <div class="glass feature">
+      <span class="ico-badge lg">📢</span>
+      <h3>Campañas de Bienvenida</h3>
+      <p class="muted">Pantalla promocional de inicio al abrir la app para mostrar ofertas exclusivas del mes de manera impactante.</p>
+    </div>
+    <!-- Estadísticas Básicas -->
+    <div class="glass feature">
+      <span class="ico-badge lg">📊</span>
+      <h3>Analítica y Estadísticas</h3>
+      <p class="muted">Entiende cuántas personas te visitan en el mes, qué información consultan y qué botones usan más.</p>
+    </div>
+    <!-- Compartir Fácil -->
+    <div class="glass feature">
+      <span class="ico-badge lg">📤</span>
+      <h3>Sistema de Referidos Natural</h3>
+      <p class="muted">Botón optimizado de compartir que fomenta que tus clientes satisfechos reenvíen tu Centro Digital por WhatsApp.</p>
+    </div>
+    <!-- Descarga de Documentos -->
+    <div class="glass feature">
+      <span class="ico-badge lg">📄</span>
+      <h3>Descarga de Documentos</h3>
+      <p class="muted">Comparte fácilmente catálogos en PDF, brochures de servicios o listas de precios descargables con un clic.</p>
+    </div>
+    <!-- Testimonios -->
+    <div class="glass feature">
+      <span class="ico-badge lg">⭐</span>
+      <h3>Testimonios Destacados</h3>
+      <p class="muted">Muestra las opiniones y valoraciones de tus clientes en el sitio para incrementar tu credibilidad en frío.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 5. BENEFICIOS (Outcomes comerciales, mantenido por claridad) -->
 <section class="section container">
   <div class="section-head center">
     <span class="eyebrow green">Resultados Reales</span>
@@ -187,38 +297,40 @@
   </div>
   
   <div class="grid-3 demo-gallery">
-    <a href="https://burgerstreet.vercel.app/" target="_blank" class="demo-item glass">
+    <!-- TODO: mover a subdominio propio (A5) -->
+    <a id="demo-link-1" href="https://burgerstreet.vercel.app/" target="_blank" class="demo-item glass">
       <div class="demo-preview">
-        <span class="demo-icon-large">🍔</span>
+        <span id="demo-icon-1" class="demo-icon-large">🍔</span>
       </div>
       <div class="demo-info">
-        <h3>Restaurante / Comidas</h3>
-        <p class="muted small">Ejemplo interactivo: Burger Street</p>
+        <h3 id="demo-title-1">Restaurante / Comidas</h3>
+        <p id="demo-desc-1" class="muted small">Ejemplo interactivo: Burger Street</p>
         <span class="btn-link">Ver demostración →</span>
       </div>
     </a>
     
-    <a href="https://juan-martinez-abogado.vercel.app/" target="_blank" class="demo-item glass">
+    <!-- TODO: mover a subdominio propio (A5) -->
+    <a id="demo-link-2" href="https://juan-martinez-abogado.vercel.app/" target="_blank" class="demo-item glass">
       <div class="demo-preview">
-        <span class="demo-icon-large">⚖️</span>
+        <span id="demo-icon-2" class="demo-icon-large">⚖️</span>
       </div>
       <div class="demo-info">
-        <h3>Profesional / Servicios</h3>
-        <p class="muted small">Ejemplo interactivo: Abogado</p>
+        <h3 id="demo-title-2">Profesional / Servicios</h3>
+        <p id="demo-desc-2" class="muted small">Ejemplo interactivo: Abogado</p>
         <span class="btn-link">Ver demostración →</span>
       </div>
     </a>
     
-    <a href="./assets/video_demo_CDN.mp4" target="_blank" class="demo-item glass">
+    <div id="video-demo-card" class="demo-item glass" style="cursor: pointer;">
       <div class="demo-preview">
         <span class="demo-icon-large">▶️</span>
       </div>
       <div class="demo-info">
         <h3>Video Explicativo</h3>
         <p class="muted small">Mira cómo funciona por dentro</p>
-        <span class="btn-link">Ver video →</span>
+        <span class="btn-link">Ver video explicativo →</span>
       </div>
-    </a>
+    </div>
   </div>
 
   <div class="demo-footer glass" style="margin-top: 40px;">
@@ -228,13 +340,11 @@
       <a class="btn btn-ghost wa-cta" style="margin-top: 24px;" data-msg="Hola 👋, ya vi las demos y quiero que construyan mi Centro Digital de Negocios.">Me gustó, quiero el mío →</a>
     </div>
     <div class="qr-compact">
-      <img id="qr-img" alt="Código QR demo" />
+      <img id="qr-img" alt="Código QR demo" loading="lazy" />
       <p class="muted small" style="text-align: center; max-width: 140px;">Apunta la cámara de tu celular al QR para probarlo en vivo</p>
     </div>
   </div>
 </section>
-
-
 
 <!-- 9. CASOS DE ÉXITO (TESTIMONIOS) -->
 <section class="section container">
@@ -244,23 +354,24 @@
   </div>
   <div class="grid-3">
     <div class="glass bonus" style="display:flex;flex-direction:column;gap:16px;">
-      <p style="font-style:italic;">"Antes daba mis tarjetas y nunca supe si las guardaban. Ahora mis clientes me dicen que es súper moderno abrir mi catálogo directo desde su inicio del celular. Mis ventas por WhatsApp subieron un 40%."</p>
+      <!-- Suavizada la cifra del 40% a un término cualitativo (A1) -->
+      <p style="font-style:italic;">"Antes daba mis tarjetas y nunca supe si las guardaban. Ahora mis clientes me dicen que es súper moderno abrir mi catálogo directo desde su inicio del celular. Mis ventas por WhatsApp aumentaron notablemente."</p>
       <div style="display:flex;align-items:center;gap:12px;margin-top:auto;">
-        <img src="./assets/carlos.png" alt="Carlos Mendoza" style="width:40px;height:40px;border-radius:50%;object-fit:cover;background:#333;" />
+        <img src="./assets/carlos.png" alt="Carlos Mendoza" loading="lazy" style="width:40px;height:40px;border-radius:50%;object-fit:cover;background:#333;" />
         <div><b>Carlos Mendoza</b><br/><span class="muted small">Asesor de Seguros</span></div>
       </div>
     </div>
     <div class="glass bonus" style="display:flex;flex-direction:column;gap:16px;">
       <p style="font-style:italic;">"El Centro Digital centralizó todo mi consultorio. Ya no tengo que pasar 5 enlaces distintos. El paciente entra, ve mis servicios, ve mi ubicación y agenda su cita. Me ahorra horas de dar explicaciones por chat."</p>
       <div style="display:flex;align-items:center;gap:12px;margin-top:auto;">
-        <img src="./assets/valeria.png" alt="Dra. Valeria Ríos" style="width:40px;height:40px;border-radius:50%;object-fit:cover;background:#333;" />
+        <img src="./assets/valeria.png" alt="Dra. Valeria Ríos" loading="lazy" style="width:40px;height:40px;border-radius:50%;object-fit:cover;background:#333;" />
         <div><b>Dra. Valeria Ríos</b><br/><span class="muted small">Odontóloga Especialista</span></div>
       </div>
     </div>
     <div class="glass bonus" style="display:flex;flex-direction:column;gap:16px;">
       <p style="font-style:italic;">"Usamos el código QR impreso en las mesas. El cliente escanea, ve el menú interactivo con fotos, nos sigue en Instagram y hace su pedido al WhatsApp. La experiencia es súper premium y la plataforma no falla."</p>
       <div style="display:flex;align-items:center;gap:12px;margin-top:auto;">
-        <img src="./assets/esteban.png" alt="Esteban Vargas" style="width:40px;height:40px;border-radius:50%;object-fit:cover;background:#333;" />
+        <img src="./assets/esteban.png" alt="Esteban Vargas" loading="lazy" style="width:40px;height:40px;border-radius:50%;object-fit:cover;background:#333;" />
         <div><b>Esteban Vargas</b><br/><span class="muted small">Dueño, Burger Street</span></div>
       </div>
     </div>
@@ -282,25 +393,6 @@
     <span>TECNOLOGÍA</span>
   </div>
 </section>
-
-<!-- 11. TODO LO QUE INCLUYE (ARSENAL) -->
-<section class="section container">
-  <div class="section-head">
-    <span class="eyebrow violet">El Arsenal</span>
-    <h2>Un sistema diseñado para <span class="text-gradient">ganar</span></h2>
-    <p class="muted">La Tarjeta Digital es solo el principio. Mira todo el ecosistema que ponemos a tu disposición.</p>
-  </div>
-  <div class="grid-3">
-    <div class="glass bonus"><div class="bonus-head"><span class="ico-badge">📱</span><h3>Tecnología PWA</h3></div><p>Se instala en el celular de tu cliente en 3 segundos, sin App Store y ocupando casi cero espacio.</p></div>
-    <div class="glass bonus"><div class="bonus-head"><span class="ico-badge">📇</span><h3>Tarjeta Digital vCard</h3></div><p>Botón mágico para que tu cliente guarde todos tus datos en su libreta de contactos al instante.</p></div>
-    <div class="glass bonus"><div class="bonus-head"><span class="ico-badge">🔳</span><h3>Código QR Dinámico</h3></div><p>Listo para imprimir. Si cambias un dato, el QR sigue funcionando y muestra la info actualizada.</p></div>
-    <div class="glass bonus"><div class="bonus-head"><span class="ico-badge">🌐</span><h3>Micro-Website (Link in Bio)</h3></div><p>Perfecto para poner en tu biografía de Instagram o TikTok. El único enlace que tu marca necesitará.</p></div>
-    <div class="glass bonus"><div class="bonus-head"><span class="ico-badge">📤</span><h3>Sistema de Referidos Natural</h3></div><p>El botón de compartir fomenta que tus clientes reenvíen todo tu Centro Digital por WhatsApp.</p></div>
-    <div class="glass bonus"><div class="bonus-head"><span class="ico-badge">📊</span><h3>Analítica Básica</h3></div><p>Entiende cuántas personas están visitando tu perfil y descubriendo tus servicios.</p></div>
-  </div>
-</section>
-
-<!-- 12. SECCIÓN ELIMINADA -->
 
 <!-- 13. FAQ -->
 <section class="section container">
@@ -463,78 +555,18 @@
     </div>
   </div>
   
-  <!-- Trust Franja -->
+  <!-- Trust Franja con línea de exclusividad (A6) -->
   <div class="mini-banner glass" style="margin-top: 56px; background: rgba(79, 179, 255, 0.05); border-color: rgba(79, 179, 255, 0.2); display: flex; flex-wrap: wrap; justify-content: center; gap: 24px; padding: 24px;">
     <span class="muted" style="display: flex; align-items: center; gap: 8px;">✅ <span class="fg">Diseño personalizado incluido.</span></span>
     <span class="muted" style="display: flex; align-items: center; gap: 8px;">✅ <span class="fg">Código QR profesional incluido.</span></span>
     <span class="muted" style="display: flex; align-items: center; gap: 8px;">✅ <span class="fg">Compatible con Android, iPhone y computador.</span></span>
     <span class="muted" style="display: flex; align-items: center; gap: 8px;">✅ <span class="fg">No requiere instalar aplicaciones.</span></span>
     <span class="muted" style="display: flex; align-items: center; gap: 8px;">✅ <span class="fg">Asesoría inicial incluida.</span></span>
+    <span class="muted" style="display: flex; align-items: center; gap: 8px;">⚠️ <span class="fg"><b>Exclusividad garantizada:</b> Solo trabajamos con un negocio por rubro y zona.</span></span>
   </div>
 </section>
 
-<!-- 15.1. QUÉ PUEDE HACER -->
-<section class="section container">
-  <div class="section-head center">
-    <h2>¿Qué puede hacer tu <span class="text-gradient">Centro Digital</span>?</h2>
-  </div>
-  <div class="grid-3">
-    <div class="glass feature">
-      <span class="ico-badge lg" style="margin-bottom: 16px;">📅</span>
-      <h3>Agenda Inteligente</h3>
-      <p class="muted mt-md">Permite que tus clientes reserven una cita contigo en cualquier momento sin necesidad de escribirte por WhatsApp.</p>
-      <div class="mt-md small"><p class="text-gradient" style="font-weight: 600; margin-bottom: 4px;">Ideal para</p><p class="muted">Médicos, Odontólogos, Psicólogos, Abogados, Estéticas.</p></div>
-    </div>
-    <div class="glass feature">
-      <span class="ico-badge lg" style="margin-bottom: 16px;">📲</span>
-      <h3>Notificaciones Push</h3>
-      <p class="muted mt-md">Permiten enviar promociones, noticias y recordatorios directamente al celular de tus clientes.</p>
-      <div class="mt-md small"><p class="text-gradient" style="font-weight: 600; margin-bottom: 4px;">Ejemplos</p><p class="muted">Hoy tenemos 20% de descuento. Nuevo producto disponible. Tu cita es mañana. Promoción por tiempo limitado.</p></div>
-    </div>
-    <div class="glass feature">
-      <span class="ico-badge lg" style="margin-bottom: 16px;">🌐</span>
-      <h3>Dominio Personalizado</h3>
-      <p class="muted mt-md">En lugar de compartir un enlace largo, podrás compartir una dirección profesional como <b class="fg">www.tunegocio.com</b>. Genera más confianza y fortalece tu marca.</p>
-    </div>
-    <div class="glass feature">
-      <span class="ico-badge lg" style="margin-bottom: 16px;">📝</span>
-      <h3>Formulario Inteligente</h3>
-      <p class="muted mt-md">Permite que los clientes soliciten información o una cotización incluso cuando estás ocupado. Toda la información llegará directamente a tu correo.</p>
-    </div>
-    <div class="glass feature">
-      <span class="ico-badge lg" style="margin-bottom: 16px;">⭐</span>
-      <h3>Testimonios</h3>
-      <p class="muted mt-md">Permite mostrar las opiniones de tus clientes. Las recomendaciones generan confianza y aumentan las ventas.</p>
-    </div>
-    <div class="glass feature">
-      <span class="ico-badge lg" style="margin-bottom: 16px;">📷</span>
-      <h3>Galería Interactiva</h3>
-      <p class="muted mt-md">Muestra tus mejores trabajos mediante fotografías organizadas de forma profesional.</p>
-    </div>
-    <div class="glass feature">
-      <span class="ico-badge lg" style="margin-bottom: 16px;">🎥</span>
-      <h3>Videos</h3>
-      <p class="muted mt-md">Presenta tus productos o servicios en acción. Los videos generan mucha más confianza que las imágenes.</p>
-    </div>
-    <div class="glass feature">
-      <span class="ico-badge lg" style="margin-bottom: 16px;">📄</span>
-      <h3>Descarga de documentos</h3>
-      <p class="muted mt-md">Permite compartir Catálogos, Menús, Portafolios, Brochures, Listas de precios.</p>
-    </div>
-    <div class="glass feature">
-      <span class="ico-badge lg" style="margin-bottom: 16px;">📊</span>
-      <h3>Estadísticas</h3>
-      <p class="muted mt-md">Conoce cuántas personas visitan tu Centro Digital, qué botones utilizan más y qué información consultan primero.</p>
-    </div>
-    <div class="glass feature">
-      <span class="ico-badge lg" style="margin-bottom: 16px;">📢</span>
-      <h3>Campañas de Bienvenida</h3>
-      <p class="muted mt-md">Cuando un cliente abra tu Centro Digital podrá aparecer una pantalla promocional mostrando una oferta, un producto nuevo o una campaña especial. Similar a las pantallas promocionales que muestran aplicaciones como Nequi.</p>
-    </div>
-  </div>
-</section>
-
-<!-- 15.2. CUÁL ES IDEAL PARA TI -->
+<!-- 15.2. CUÁL ES IDEAL PARA TI (Mapeo por nicho) -->
 <section class="section container">
   <div class="section-head center">
     <h2>¿Cuál Centro Digital es <span class="text-gradient">ideal para ti</span>?</h2>
@@ -588,24 +620,63 @@
   </div>
 </section>
 
+<!-- 15.4. PROCESO EN 3 PASOS (Recuperado de las clases del CSS - A6) -->
+<section class="section container">
+  <div class="section-head center">
+    <span class="eyebrow green">¿Cómo funciona?</span>
+    <h2>Tu Centro Digital en <span class="text-gradient">3 simples pasos</span></h2>
+    <p class="muted">El proceso es rápido, sencillo y no requiere ningún esfuerzo técnico de tu parte.</p>
+  </div>
+  <div class="grid-3 steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h3>Nos escribes</h3>
+      <p class="muted">Eliges tu plan y nos contactas por WhatsApp. Definimos los detalles iniciales de tu negocio en minutos.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h3>Nos envías tu info</h3>
+      <p class="muted">Nos compartes tu logotipo, tus redes, tu catálogo y la información básica de tu negocio a través de un formulario sencillo.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h3>Recibes en 48h</h3>
+      <p class="muted">Diseñamos y configuramos todo. En 48 horas o menos tu Centro Digital estará en línea listo para vender.</p>
+    </div>
+  </div>
+</section>
+
 <!-- 16. FINAL CTA -->
 <section class="section container">
   <div class="final-cta glass">
     <h2>Tu negocio merece una <span class="text-gradient">presencia a la altura.</span></h2>
     <p class="lead" style="margin-top: 24px; margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">Deja de perder oportunidades de venta por culpa de contactos mal anotados o catálogos perdidos. Profesionaliza tu atención digital hoy mismo y facilita que tus clientes te compren. El riesgo es 0, el potencial es ilimitado.</p>
     <a class="btn btn-glow pulse big wa-cta" data-msg="Hola 👋, ¡Quiero dar el salto y tener mi propio Centro Digital de Negocios! ¿Me ayudan a comenzar?">Quiero mi Centro Digital de Negocios →</a>
-    <p class="muted small mt-md">🔒 <b>Paga solo 30% al iniciar</b> · 🎯 Entrega en 48h · 💬 Asesoría humana directa</p>
+    <p class="muted small mt-md">🔒 <b>Paga solo 30% al iniciar</b> · 🎯 Entrega en 48h · 💬 Asesoría humana directa <br> ⚠️ <b>Exclusividad:</b> Solo trabajamos con un negocio por rubro y zona para evitar competencia directa.</p>
   </div>
 </section>
 
+<!-- FOOTER (Con enlaces reales a placeholders - A6) -->
 <footer class="footer container">
   <div class="brand"><span class="brand-badge">✦</span><span class="brand-name">miTapCard</span></div>
-  <div class="foot-links"><a href="#">Términos y condiciones</a><a href="#">Política de privacidad</a></div>
+  <div class="foot-links"><a href="./terminos.html">Términos y condiciones</a><a href="./privacidad.html">Política de privacidad</a></div>
   <p class="muted small">© <span id="year"></span> miTapCard. Todos los derechos reservados.</p>
 </footer>
 
+<!-- FLOATING WHATSAPP -->
 <a id="wa-float" class="wa-float wa-cta" data-msg="Hola 👋, estoy en la web del Centro Digital y tengo una pregunta antes de comenzar." aria-label="Contactar por WhatsApp">💬</a>
 
+<!-- VIDEO MODAL LIGHTBOX -->
+<div id="video-modal" class="video-modal-overlay" style="display: none;">
+  <div class="video-modal-container glass">
+    <button id="close-video-modal" class="video-modal-close" aria-label="Cerrar video">&times;</button>
+    <video id="modal-video-player" src="./assets/video_demo_CDN.mp4" controls preload="none" style="width: 100%; max-height: 80vh; border-radius: 16px; object-fit: contain;"></video>
+  </div>
+</div>
+
+<!-- SCRIPTS (Con el sistema de nichos enlazado antes del script principal - B) -->
+<script src="./nichos.js"></script>
+<script src="./nicho.js"></script>
 <script src="./script.js"></script>
 </body>
 </html>
