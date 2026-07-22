@@ -89,5 +89,35 @@ const NICHOS_DATA = {
     "whatsapp_frase": "mi constructora",
     "seo_titulo": "Centro Digital de Negocios para Constructoras y Arquitectura | miTapCard",
     "seo_descripcion": "Digitaliza el portafolio de tu constructora. Presenta proyectos, acabados y canales directos de cotización de forma profesional."
+  },
+  "barberia": {
+    "nombre": "Barberías",
+    "emoji": "💈",
+    "titular_variable": "barbería",
+    "mockup_persona": "Mateo Silva, Barbería BarberShop",
+    "dolores": [
+      "\"Tus clientes llaman o escriben constantemente a interrumpir los cortes para preguntar turnos o precios.\"",
+      "\"Pierdes citas de fin de semana porque no tienes una agenda digital disponible 24/7 para reservar al instante.\"",
+      "\"Tus clientes no ubican fácil tu barbería en Google Maps ni encuentran tu catálogo de cortes y servicios.\""
+    ],
+    "demo_url": "",
+    "whatsapp_frase": "mi barbería",
+    "seo_titulo": "Centro Digital de Negocios para Barberías | miTapCard",
+    "seo_descripcion": "Digitaliza tu barbería. Agenda online, menú de servicios, ubicación en Google Maps y contacto directo por WhatsApp."
+  },
+  "barberias": {
+    "nombre": "Barberías",
+    "emoji": "💈",
+    "titular_variable": "barbería",
+    "mockup_persona": "Mateo Silva, Barbería BarberShop",
+    "dolores": [
+      "\"Tus clientes llaman o escriben constantemente a interrumpir los cortes para preguntar turnos o precios.\"",
+      "\"Pierdes citas de fin de semana porque no tienes una agenda digital disponible 24/7 para reservar al instante.\"",
+      "\"Tus clientes no ubican fácil tu barbería en Google Maps ni encuentran tu catálogo de cortes y servicios.\""
+    ],
+    "demo_url": "",
+    "whatsapp_frase": "mi barbería",
+    "seo_titulo": "Centro Digital de Negocios para Barberías | miTapCard",
+    "seo_descripcion": "Digitaliza tu barbería. Agenda online, menú de servicios, ubicación en Google Maps y contacto directo por WhatsApp."
   }
 };

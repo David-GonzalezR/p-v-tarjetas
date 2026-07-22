@@ -230,8 +230,12 @@
 
     // Determinar la palabra sustituta del nicho para combinar en el título del Hero
     let nichoPalabra = "negocio";
-    if (nichoKey && typeof NICHOS_DATA !== "undefined" && NICHOS_DATA[nichoKey]) {
-      nichoPalabra = NICHOS_DATA[nichoKey].titular_variable || NICHOS_DATA[nichoKey].nombre.toLowerCase();
+    if (nichoKey) {
+      if (typeof NICHOS_DATA !== "undefined" && NICHOS_DATA[nichoKey]) {
+        nichoPalabra = NICHOS_DATA[nichoKey].titular_variable || NICHOS_DATA[nichoKey].nombre.toLowerCase();
+      } else {
+        nichoPalabra = nichoKey;
+      }
     }
 
     // Construir título personalizado combinando Origen + Nicho
